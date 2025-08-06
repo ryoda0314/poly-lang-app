@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   const { language, setLanguage, fetchLanguage } = useLanguageStore();
 
- // アプリ起動時に一度だけDBから言語設定を読み込む
+ // アプリ起動時に一度だけDBから言語設定を読
   useEffect(() => {
     fetchLanguage();
   }, [fetchLanguage]);
